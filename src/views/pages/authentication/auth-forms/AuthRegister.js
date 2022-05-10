@@ -29,6 +29,7 @@ import { Formik } from 'formik';
 // project imports
 import useScriptRef from 'hooks/useScriptRef';
 import Google from 'assets/images/icons/social-google.svg';
+import WSO2 from 'assets/images/icons/wso2-vector-logo-2022.svg';
 import AnimateButton from 'ui-component/extended/AnimateButton';
 import { strengthColor, strengthIndicator } from 'utils/password-strength';
 
@@ -87,10 +88,28 @@ const FirebaseRegister = ({ ...others }) => {
                                 borderColor: theme.palette.grey[100]
                             }}
                         >
-                            <Box sx={{ mr: { xs: 1, sm: 2, width: 20 } }}>
-                                <img src={Google} alt="google" width={16} height={16} style={{ marginRight: matchDownSM ? 8 : 16 }} />
+                            Sign up with
+                            <Box sx={{ ml: { xs: 1, width: 10 }, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                                <img src={Google} alt="google" width={16} height={16} />
                             </Box>
-                            Sign up with Google
+                        </Button>
+                    </AnimateButton>
+                    <AnimateButton>
+                        <Button
+                            variant="outlined"
+                            fullWidth
+                            size="large"
+                            sx={{
+                                mt: 2,
+                                color: 'grey.700',
+                                backgroundColor: theme.palette.grey[50],
+                                borderColor: theme.palette.grey[100]
+                            }}
+                        >
+                            Sign up with
+                            <Box sx={{ ml: { xs: 1, width: 10 }, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                                <img src={WSO2} alt="WSO2" width={30} height={30} />
+                            </Box>
                         </Button>
                     </AnimateButton>
                 </Grid>
